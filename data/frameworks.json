@@ -1,0 +1,336 @@
+{
+  "meta": {
+    "title": "AI Governance Compass",
+    "description": "Side-by-side comparison of the EU AI Act, NIST AI RMF, ISO/IEC 42001 and Kenya's Data Protection Act across seven governance dimensions.",
+    "lastUpdated": "2026-08-23",
+    "methodologyUrl": "docs/METHODOLOGY.md",
+    "sourcesUrl": "docs/SOURCES.md"
+  },
+  "frameworks": [
+    {
+      "id": "eu-ai-act",
+      "name": "EU AI Act",
+      "type": "Binding regulation",
+      "jurisdiction": "European Union",
+      "officialSourceUrl": "https://artificialintelligenceact.eu/"
+    },
+    {
+      "id": "nist-ai-rmf",
+      "name": "NIST AI RMF",
+      "type": "Voluntary framework",
+      "jurisdiction": "United States",
+      "officialSourceUrl": "https://www.nist.gov/itl/ai-risk-management-framework"
+    },
+    {
+      "id": "iso-42001",
+      "name": "ISO/IEC 42001",
+      "type": "Certifiable standard",
+      "jurisdiction": "International",
+      "officialSourceUrl": "https://www.iso.org/standard/81230.html"
+    },
+    {
+      "id": "kenya-dpa",
+      "name": "Kenya Data Protection Act",
+      "type": "Binding regulation",
+      "jurisdiction": "Kenya",
+      "officialSourceUrl": "https://new.kenyalaw.org/akn/ke/act/2019/24"
+    }
+  ],
+  "dimensions": [
+    { "id": "risk-classification", "label": "Risk Classification Approach" },
+    { "id": "legal-status", "label": "Legal Status / Enforceability" },
+    { "id": "data-governance", "label": "Data Governance Requirements" },
+    { "id": "transparency", "label": "Transparency Obligations" },
+    { "id": "human-oversight", "label": "Human Oversight Requirements" },
+    { "id": "documentation", "label": "Documentation & Record-Keeping" },
+    { "id": "enforcement", "label": "Enforcement & Penalties" }
+  ],
+  "entries": [
+    {
+      "frameworkId": "eu-ai-act",
+      "dimensionId": "risk-classification",
+      "summary": "Four-tier risk model: unacceptable, high, limited, minimal.",
+      "sourceClause": "Title II\u2013III",
+      "sourceUrl": "https://artificialintelligenceact.eu/article/6/",
+      "verified": true,
+      "lastVerified": "2026-08-23"
+    },
+    {
+      "frameworkId": "nist-ai-rmf",
+      "dimensionId": "risk-classification",
+      "summary": "No fixed tiers; context-specific risk profiling via the Map function.",
+      "sourceClause": "Core: Map 1\u20135",
+      "sourceUrl": "https://www.nist.gov/itl/ai-risk-management-framework",
+      "verified": false,
+      "lastVerified": null,
+      "note": "Clause reference not yet independently re-verified against the NIST AI RMF 1.0 PDF. Verify Map function sub-category numbering before treating as final."
+    },
+    {
+      "frameworkId": "iso-42001",
+      "dimensionId": "risk-classification",
+      "summary": "Management-system risk assessment plus AI system impact assessment.",
+      "sourceClause": "Cl. 6.1, 6.1.4",
+      "sourceUrl": "https://www.iso.org/standard/81230.html",
+      "verified": false,
+      "lastVerified": null,
+      "note": "ISO/IEC 42001 full text is paywalled; clause numbers sourced from secondary summaries and not checked against the purchased standard. Flag as lower-confidence until verified against the official text."
+    },
+    {
+      "frameworkId": "kenya-dpa",
+      "dimensionId": "risk-classification",
+      "summary": "No AI-specific risk tiers; risk is framed around high-risk personal data processing.",
+      "sourceClause": "Sec. 31",
+      "sourceUrl": "https://new.kenyalaw.org/akn/ke/act/2019/24",
+      "verified": true,
+      "lastVerified": "2026-08-23"
+    },
+    {
+      "frameworkId": "eu-ai-act",
+      "dimensionId": "legal-status",
+      "summary": "Directly applicable EU regulation with phased compliance deadlines.",
+      "sourceClause": "Art. 113",
+      "sourceUrl": "https://artificialintelligenceact.eu/article/113/",
+      "verified": true,
+      "lastVerified": "2026-08-23"
+    },
+    {
+      "frameworkId": "nist-ai-rmf",
+      "dimensionId": "legal-status",
+      "summary": "Voluntary guidance; may become binding through contracts or procurement.",
+      "sourceClause": "Sec. 1",
+      "sourceUrl": "https://www.nist.gov/itl/ai-risk-management-framework",
+      "verified": false,
+      "lastVerified": null
+    },
+    {
+      "frameworkId": "iso-42001",
+      "dimensionId": "legal-status",
+      "summary": "Certifiable standard; enforceable only via audit and certification, not law.",
+      "sourceClause": "Cl. 1",
+      "sourceUrl": "https://www.iso.org/standard/81230.html",
+      "verified": false,
+      "lastVerified": null
+    },
+    {
+      "frameworkId": "kenya-dpa",
+      "dimensionId": "legal-status",
+      "summary": "Binding national statute supervised by the Data Commissioner (ODPC).",
+      "sourceClause": "Act No. 24 of 2019",
+      "sourceUrl": "https://new.kenyalaw.org/akn/ke/act/2019/24",
+      "verified": true,
+      "lastVerified": "2026-08-23"
+    },
+    {
+      "frameworkId": "eu-ai-act",
+      "dimensionId": "data-governance",
+      "summary": "High-risk systems require representative, error-examined training, validation and testing data.",
+      "sourceClause": "Art. 10",
+      "sourceUrl": "https://artificialintelligenceact.eu/article/10/",
+      "verified": true,
+      "lastVerified": "2026-08-23"
+    },
+    {
+      "frameworkId": "nist-ai-rmf",
+      "dimensionId": "data-governance",
+      "summary": "Recommends provenance, representativeness and drift-monitoring practices.",
+      "sourceClause": "Measure 2.8",
+      "sourceUrl": "https://www.nist.gov/itl/ai-risk-management-framework",
+      "verified": false,
+      "lastVerified": null
+    },
+    {
+      "frameworkId": "iso-42001",
+      "dimensionId": "data-governance",
+      "summary": "Annex A controls for data quality, provenance and lifecycle handling.",
+      "sourceClause": "Annex A.7",
+      "sourceUrl": "https://www.iso.org/standard/81230.html",
+      "verified": false,
+      "lastVerified": null
+    },
+    {
+      "frameworkId": "kenya-dpa",
+      "dimensionId": "data-governance",
+      "summary": "Lawful basis and purpose-limitation/minimisation rules for personal data; data localisation is addressed separately.",
+      "sourceClause": "Sec. 25, 30 (localisation: Sec. 50)",
+      "sourceUrl": "https://new.kenyalaw.org/akn/ke/act/2019/24",
+      "verified": true,
+      "lastVerified": "2026-08-23",
+      "note": "Corrected from earlier draft: localisation is governed by Sec. 50, not Sec. 25/30. Kept as a separate citation to avoid overstating what 25/30 cover."
+    },
+    {
+      "frameworkId": "eu-ai-act",
+      "dimensionId": "transparency",
+      "summary": "Users must be told they are interacting with AI; synthetic/manipulated media must be labelled.",
+      "sourceClause": "Art. 50",
+      "sourceUrl": "https://artificialintelligenceact.eu/article/50/",
+      "verified": true,
+      "lastVerified": "2026-08-23"
+    },
+    {
+      "frameworkId": "nist-ai-rmf",
+      "dimensionId": "transparency",
+      "summary": "Treats transparency as a trustworthiness characteristic rather than a standalone duty.",
+      "sourceClause": "Sec. 3.5",
+      "sourceUrl": "https://www.nist.gov/itl/ai-risk-management-framework",
+      "verified": false,
+      "lastVerified": null
+    },
+    {
+      "frameworkId": "iso-42001",
+      "dimensionId": "transparency",
+      "summary": "Requires documented information be made available to users and affected parties.",
+      "sourceClause": "Annex A.8",
+      "sourceUrl": "https://www.iso.org/standard/81230.html",
+      "verified": false,
+      "lastVerified": null
+    },
+    {
+      "frameworkId": "kenya-dpa",
+      "dimensionId": "transparency",
+      "summary": "Data subjects must be informed of processing purposes and, for automated decisions, the logic involved.",
+      "sourceClause": "Sec. 26, 29",
+      "sourceUrl": "https://new.kenyalaw.org/akn/ke/act/2019/24",
+      "verified": true,
+      "lastVerified": "2026-08-23"
+    },
+    {
+      "frameworkId": "eu-ai-act",
+      "dimensionId": "human-oversight",
+      "summary": "High-risk systems must be designed to allow effective human oversight and intervention.",
+      "sourceClause": "Art. 14",
+      "sourceUrl": "https://artificialintelligenceact.eu/article/14/",
+      "verified": true,
+      "lastVerified": "2026-08-23"
+    },
+    {
+      "frameworkId": "nist-ai-rmf",
+      "dimensionId": "human-oversight",
+      "summary": "Encourages defined human-AI configurations and override pathways.",
+      "sourceClause": "Govern 3.2",
+      "sourceUrl": "https://www.nist.gov/itl/ai-risk-management-framework",
+      "verified": false,
+      "lastVerified": null
+    },
+    {
+      "frameworkId": "iso-42001",
+      "dimensionId": "human-oversight",
+      "summary": "Defines roles, responsibilities and human control points within the AI management system.",
+      "sourceClause": "Cl. 5.3, Annex A.9",
+      "sourceUrl": "https://www.iso.org/standard/81230.html",
+      "verified": false,
+      "lastVerified": null
+    },
+    {
+      "frameworkId": "kenya-dpa",
+      "dimensionId": "human-oversight",
+      "summary": "Right not to be subject to a decision based solely on automated processing that produces legal or similarly significant effects.",
+      "sourceClause": "Sec. 35",
+      "sourceUrl": "https://new.kenyalaw.org/akn/ke/act/2019/24",
+      "verified": true,
+      "lastVerified": "2026-08-23"
+    },
+    {
+      "frameworkId": "eu-ai-act",
+      "dimensionId": "documentation",
+      "summary": "Technical documentation plus automatic event logging for traceability.",
+      "sourceClause": "Art. 11\u201312, Annex IV",
+      "sourceUrl": "https://artificialintelligenceact.eu/article/11/",
+      "verified": true,
+      "lastVerified": "2026-08-23"
+    },
+    {
+      "frameworkId": "nist-ai-rmf",
+      "dimensionId": "documentation",
+      "summary": "Suggests model and use-case documentation; no prescribed template.",
+      "sourceClause": "Govern 1.2",
+      "sourceUrl": "https://www.nist.gov/itl/ai-risk-management-framework",
+      "verified": false,
+      "lastVerified": null
+    },
+    {
+      "frameworkId": "iso-42001",
+      "dimensionId": "documentation",
+      "summary": "Extensive documented-information and internal audit trail obligations.",
+      "sourceClause": "Cl. 7.5, 9.2",
+      "sourceUrl": "https://www.iso.org/standard/81230.html",
+      "verified": false,
+      "lastVerified": null
+    },
+    {
+      "frameworkId": "kenya-dpa",
+      "dimensionId": "documentation",
+      "summary": "Data protection impact assessments and processing records required for high-risk processing.",
+      "sourceClause": "Sec. 31",
+      "sourceUrl": "https://new.kenyalaw.org/akn/ke/act/2019/24",
+      "verified": true,
+      "lastVerified": "2026-08-23"
+    },
+    {
+      "frameworkId": "eu-ai-act",
+      "dimensionId": "enforcement",
+      "summary": "Fines up to EUR 35m or 7% of global turnover, whichever is higher, for prohibited-practice breaches (Art. 5); lower tiers (up to EUR 15m/3% and EUR 7.5m/1%) apply to other operator obligations.",
+      "sourceClause": "Art. 99",
+      "sourceUrl": "https://artificialintelligenceact.eu/article/99/",
+      "verified": true,
+      "lastVerified": "2026-08-23"
+    },
+    {
+      "frameworkId": "nist-ai-rmf",
+      "dimensionId": "enforcement",
+      "summary": "No penalties; accountability rests entirely on the adopting organisation.",
+      "sourceClause": "n/a",
+      "sourceUrl": "https://www.nist.gov/itl/ai-risk-management-framework",
+      "verified": true,
+      "lastVerified": "2026-08-23"
+    },
+    {
+      "frameworkId": "iso-42001",
+      "dimensionId": "enforcement",
+      "summary": "Non-conformity leads to loss or denial of certification rather than legal sanction.",
+      "sourceClause": "Cl. 10",
+      "sourceUrl": "https://www.iso.org/standard/81230.html",
+      "verified": false,
+      "lastVerified": null
+    },
+    {
+      "frameworkId": "kenya-dpa",
+      "dimensionId": "enforcement",
+      "summary": "Administrative fines up to KES 5m or 1% of annual turnover, whichever is lower.",
+      "sourceClause": "Sec. 63",
+      "sourceUrl": "https://new.kenyalaw.org/akn/ke/act/2019/24",
+      "verified": true,
+      "lastVerified": "2026-08-23",
+      "note": "Corrected from earlier draft: the Act specifies 'whichever is lower', not an unqualified KES 5m/1% cap. A 2025 Amendment Bill would flip this to 'whichever is higher' but is not yet law \u2014 do not conflate the two. Removed unverified 'plus compensation' claim pending confirmation of the specific compensation provision."
+    }
+  ],
+  "divergences": [
+    {
+      "id": "agentic-ai-gap",
+      "title": "Agentic AI is under-addressed across all frameworks",
+      "description": "None of the primary frameworks fully address multi-agent orchestration or autonomous decision delegation, leaving accountability for chained actions unresolved.",
+      "frameworksInvolved": ["eu-ai-act", "nist-ai-rmf", "iso-42001"],
+      "dimensionIds": ["risk-classification", "human-oversight"]
+    },
+    {
+      "id": "risk-tier-vs-context",
+      "title": "Risk is classified by product tier vs. by context",
+      "description": "The EU AI Act fixes risk categories in law, while NIST and ISO expect organisations to derive risk from deployment context \u2014 the same system can be 'high-risk' in one regime and unclassified in another.",
+      "frameworksInvolved": ["eu-ai-act", "nist-ai-rmf", "iso-42001"],
+      "dimensionIds": ["risk-classification"]
+    },
+    {
+      "id": "enforcement-magnitude",
+      "title": "Enforcement teeth vary by orders of magnitude",
+      "description": "Turnover-based fines in the EU and Kenya sit alongside purely reputational consequences under NIST and certification loss under ISO, creating uneven compliance incentives for multinational deployers.",
+      "frameworksInvolved": ["eu-ai-act", "kenya-dpa", "nist-ai-rmf", "iso-42001"],
+      "dimensionIds": ["enforcement"]
+    },
+    {
+      "id": "data-protection-by-proxy",
+      "title": "Data-protection law carries AI duties by proxy",
+      "description": "Kenya's DPA governs AI indirectly through personal-data rules, so systems that do not process personal data fall outside its oversight entirely \u2014 a gap AI-specific frameworks attempt to close.",
+      "frameworksInvolved": ["kenya-dpa", "eu-ai-act"],
+      "dimensionIds": ["data-governance", "risk-classification"]
+    }
+  ]
+}
